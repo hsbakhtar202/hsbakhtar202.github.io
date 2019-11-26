@@ -10,6 +10,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+      data-dojo-config="usePlainJson: true, isDebug: false"
+    ></script>
+    <script type="text/javascript">
+      window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+        L.start({
+          baseUrl: "mc.us12.list-manage.com",
+          uuid: "5c6ca9f8b5c16803ad61b002f",
+          lid: "f43ad20060",
+          uniqueMethods: true
+        });
+      });
+    </script>
   </head>
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
@@ -40,7 +55,6 @@
         >
       </p>
     </main>
-
     <footer class="mastfoot mt-auto">
       <div class="inner">
         <p></p>
